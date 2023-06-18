@@ -1,0 +1,28 @@
+将下面这段代码原封不动复制到文件\mmsegmentation\mmseg\datasets\basesegdataset.py最底部
+
+@DATASETS.register_module()
+class StanfordBackgroundDataset(BaseSegDataset):
+  METAINFO = dict(classes = ('background', 'glomeruili'), palette = [[128, 128, 128], [151, 189, 8]])
+  def __init__(self, **kwargs):
+    super().__init__(img_suffix='.png', seg_map_suffix='.png', **kwargs)
+
+
+
+
+
+
+# 数据集配置文件
+
+https://zihao-openmmlab.obs.cn-east-3.myhuaweicloud.com/20230130-mmseg/dataset/StanfordBackgroundDataset.py 
+
+O ../mmsegmentation/mmseg/datasets/StanfordBackgroundDataset.py
+
+
+
+
+
+# 修改 ../mmsegmentation/mmseg/datasets/__init__.py，添加数据集
+
+https://zihao-openmmlab.obs.cn-east-3.myhuaweicloud.com/20230130-mmseg/dataset/__init__.py
+
+-O ../mmsegmentation/mmseg/datasets/__init__.py

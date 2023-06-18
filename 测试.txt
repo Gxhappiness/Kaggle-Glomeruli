@@ -1,0 +1,12 @@
+终端命令行先转到当前项目文件Glomeruli下
+
+
+测试集精度指标
+
+python ../../tools/test.py Glomeruli_pspnet_cityscapes.py ./work_dirs/tutorial/iter_800.pth
+
+
+
+测试集速度指标
+
+python ../../tools/analysis_tools/benchmark.py Glomeruli_pspnet_cityscapes.py ./work_dirs/tutorial/iter_800.pth
