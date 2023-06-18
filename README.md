@@ -3,6 +3,11 @@
 
 
 
+使用openmmlab中mmsegmentation库进行语义分割
+
+
+
+
 
 数据集和更多详情操作参照本人CSDN帖子：https://bbs.csdn.net/topics/616043986
 
